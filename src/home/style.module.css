@@ -1,5 +1,7 @@
-img {
+.img img {
   width: 250px;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
 }
 
 .title {
@@ -27,4 +29,21 @@ img {
 .about {
   margin-top: 15px;
   text-align-last: center;
+}
+
+@media (max-width: 768px) {
+  .img img {
+    width: 100px;
+  }
+}
+
+@keyframes up-and-down {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: -50px;
+  }
 }

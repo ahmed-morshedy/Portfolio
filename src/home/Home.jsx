@@ -30,7 +30,7 @@ function Home() {
           </button>
         </div>
         <div className={style.img}>
-          <img src={robot} alt="robot" className="d-none d-sm-block "></img>
+          <img src={robot} alt="robot"></img>
         </div>
       </div>
       <div className="py-4 container d-flex align-items-center flex-column ">
