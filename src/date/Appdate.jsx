@@ -48,8 +48,8 @@ function App() {
         <Col>
           <div className="fs-5 mt-3 ">
             {persons.length
-              ? `You have ${persons.length} dates today`
-              : "You don't have any dates today"}
+              ? `I have ${persons.length} dates today`
+              : "I don't have any dates today"}
           </div>
         </Col>
       </Row>
