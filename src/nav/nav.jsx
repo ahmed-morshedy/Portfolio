@@ -12,6 +12,7 @@ import {
   faCode,
   faFolderOpen,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Button from "react-bootstrap/Button";
 
 function NavBar() {
@@ -99,9 +100,10 @@ function NavBar() {
               <Button
                 href="https://github.com/ahmed-morshedy"
                 target="_blank"
-                className="fork-btn-inner"
+                className="fork-btn-inner bg-dark btn-dark"
+                style={{ padding: "5px", width: "40px", height: "40px" }}
               >
-                <FontAwesomeIcon icon={faCodeFork} size="xl" />
+                <FontAwesomeIcon icon={faGithub} size="xl" />
               </Button>
             </Nav.Item>
           </Nav>

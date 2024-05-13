@@ -9,6 +9,7 @@ import csslogo from "../assets/css-3.png";
 import gitlogo from "../assets/social.png";
 import githublogo from "../assets/github.png";
 import bootlogo from "../assets/Bootstrap_logo.svg.png";
+import fontlogo from "../assets/font-awesome-logo-3010FE2434-seeklogo.com.png";
 import style from "./style.module.css";
 
 function Home() {
@@ -78,6 +79,7 @@ function Home() {
           <img src={bootlogo} alt="logo" />
           <img src={gitlogo} alt="logo" />
           <img src={githublogo} alt="logo" />
+          <img src={fontlogo} alt="logo" />
         </div>
       </div>
     </>
