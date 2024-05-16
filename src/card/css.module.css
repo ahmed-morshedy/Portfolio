@@ -1,7 +1,8 @@
+.image {
+  height: 250px;
+}
+
 @media (max-width: 767px) {
-  .image {
-    height: 250px;
-  }
   .card {
     width: 300px;
   }

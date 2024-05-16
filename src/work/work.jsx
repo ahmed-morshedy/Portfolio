@@ -53,9 +53,20 @@ const Work = () => {
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS", "JS"]}
-            link={"https://ahmed-morshedy.github.io/Bondi/"}
+            link={"https://ahmed-morshedy.github.io/Dashboard/"}
             img={bondi}
-            title={"Bondi-Template"}
+            title={"Dashboard"}
+            text={
+              "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
+            }
+          />
+        </Col>{" "}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["HTML", "CSS", "JS"]}
+            link={"https://ahmed-morshedy.github.io/Elzero_Template/"}
+            img={bondi}
+            title={"Elzero-Template"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
             }
@@ -74,15 +85,44 @@ const Work = () => {
         </Col>{" "}
         <Col className="d-flex justify-content-center ">
           <Cards
-            tech={["HTML", "CSS", "JS"]}
-            link={"https://ahmed-morshedy.github.io/Bondi/"}
+            tech={["HTML", "CSS"]}
+            link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
             img={bondi}
-            title={"Bondi-Template"}
+            title={"Restaurant"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
             }
           />
         </Col>{" "}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["React"]}
+            link={"https://main--date-reminder-morshedy.netlify.app/"}
+            img={bondi}
+            title={"Date reminder"}
+            text={"Date reminder with react "}
+          />
+        </Col>{" "}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["React"]}
+            link={"https://to-do-reactproject.netlify.app/"}
+            img={bondi}
+            title={"To-Do List"}
+            text={"S  imple to do list with react "}
+          />
+        </Col>{" "}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["HTML", "CSS"]}
+            link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
+            img={bondi}
+            title={"Kasper-Template"}
+            text={
+              "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
+            }
+          />
+        </Col>
       </Row>
     </div>
   );
