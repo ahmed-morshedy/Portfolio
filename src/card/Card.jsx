@@ -12,7 +12,7 @@ function Cards(props) {
         <Card.Title>{props.title}</Card.Title>
         {/* <Card.Text>{props.text}</Card.Text> */}
         <div className="my-3">
-          Technology :
+          Technology :{" "}
           <span className=" mx-3 ">
             {props.tech.map((data, id) => {
               return (
