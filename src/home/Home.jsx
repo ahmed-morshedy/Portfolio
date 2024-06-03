@@ -36,7 +36,7 @@ function Home() {
           </Button>
         </div>
         <div className={style.img}>
-          <img src={robot} alt="robot"></img>
+          <img src={robot} alt="robot" decoding="auto"></img>
         </div>
       </div>
 
