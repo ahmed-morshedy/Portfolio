@@ -10,20 +10,22 @@ function Cards(props) {
       <Card.Img variant="top" src={props.img} className={style.image} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text>{props.text}</Card.Text>
-        <div>Technology :</div>
-        <div className="d-flex mx-3 flex-wrap">
-          {props.tech.map((data, id) => {
-            return (
-              <span
-                key={id}
-                id={id}
-                className="me-2 mb-1 border border-secondary-subtle p-1 rounded bg-secondary-subtle "
-              >
-                {data}
-              </span>
-            );
-          })}
+        {/* <Card.Text>{props.text}</Card.Text> */}
+        <div className="my-3">
+          Technology :
+          <span className=" mx-3 ">
+            {props.tech.map((data, id) => {
+              return (
+                <span
+                  key={id}
+                  id={id}
+                  className="me-2 mb-1 border border-secondary-subtle p-1 rounded bg-secondary-subtle "
+                >
+                  {data}
+                </span>
+              );
+            })}
+          </span>
         </div>
 
         <Button variant="outline-primary" href={props.link} target="_blank">

@@ -4,6 +4,12 @@ import Cards from "../card/Card";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import bondi from "../assets/bondi-home.png";
+import kasper from "../assets/kasper.png";
+import dashbord from "../assets/dashbord.png";
+import restaurant from "../assets/restaurant.png";
+import elzero from "../assets/elzero.png";
+import toDo from "../assets/toDo.png";
+import date from "../assets/date.png";
 
 const Work = () => {
   const [repos, setRepos] = useState([]);
@@ -54,7 +60,7 @@ const Work = () => {
           <Cards
             tech={["HTML", "CSS", "JS"]}
             link={"https://ahmed-morshedy.github.io/Dashboard/"}
-            img={bondi}
+            img={dashbord}
             title={"Dashboard"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
@@ -65,7 +71,7 @@ const Work = () => {
           <Cards
             tech={["HTML", "CSS", "JS"]}
             link={"https://ahmed-morshedy.github.io/Elzero_Template/"}
-            img={bondi}
+            img={elzero}
             title={"Elzero-Template"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
@@ -86,8 +92,8 @@ const Work = () => {
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS"]}
-            link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
-            img={bondi}
+            link={"https://https://ahmed-morshedy.github.io/restaurant/"}
+            img={restaurant}
             title={"Restaurant"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
@@ -98,7 +104,7 @@ const Work = () => {
           <Cards
             tech={["React"]}
             link={"https://main--date-reminder-morshedy.netlify.app/"}
-            img={bondi}
+            img={date}
             title={"Date reminder"}
             text={"Date reminder with react "}
           />
@@ -107,7 +113,7 @@ const Work = () => {
           <Cards
             tech={["React"]}
             link={"https://to-do-reactproject.netlify.app/"}
-            img={bondi}
+            img={toDo}
             title={"To-Do List"}
             text={"S  imple to do list with react "}
           />
@@ -116,7 +122,7 @@ const Work = () => {
           <Cards
             tech={["HTML", "CSS"]}
             link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
-            img={bondi}
+            img={kasper}
             title={"Kasper-Template"}
             text={
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
