@@ -50,12 +50,13 @@ const Work = () => {
           backgroundColor: " #e2e3e5",
           borderRadius: "4px",
           textAlign: "center",
-          marginBlock: "10px",
+          marginBlock: "30px",
         }}
       >
         Projects
       </div>
       <Row className="g-4 " xs={1} md={3}>
+        {/*Dashboard*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS", "JS"]}
@@ -66,7 +67,8 @@ const Work = () => {
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
             }
           />
-        </Col>{" "}
+        </Col>
+        {/*Elzero-Template*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS", "JS"]}
@@ -77,7 +79,8 @@ const Work = () => {
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
             }
           />
-        </Col>{" "}
+        </Col>
+        {/*Bondi-Template*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS", "JS"]}
@@ -88,11 +91,12 @@ const Work = () => {
               "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
             }
           />
-        </Col>{" "}
+        </Col>
+        {/*Restaurant*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS"]}
-            link={"https://https://ahmed-morshedy.github.io/restaurant/"}
+            link={"https://ahmed-morshedy.github.io/restaurant/"}
             img={restaurant}
             title={"Restaurant"}
             text={
@@ -100,6 +104,7 @@ const Work = () => {
             }
           />
         </Col>{" "}
+        {/*Date reminder*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["React"]}
@@ -108,7 +113,8 @@ const Work = () => {
             title={"Date reminder"}
             text={"Date reminder with react "}
           />
-        </Col>{" "}
+        </Col>
+        {/*To DO*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["React"]}
@@ -117,7 +123,8 @@ const Work = () => {
             title={"To-Do List"}
             text={"S  imple to do list with react "}
           />
-        </Col>{" "}
+        </Col>
+        {/*Kasper*/}
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["HTML", "CSS"]}

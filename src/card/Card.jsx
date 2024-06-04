@@ -7,7 +7,10 @@ import style from "./css.module.css";
 function Cards(props) {
   return (
     <Card className={style.card}>
-      <Card.Img variant="top" src={props.img} className={style.image} />
+      <a href={props.link} target="_blanc">
+        {" "}
+        <Card.Img variant="top" src={props.img} className={style.image} />
+      </a>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         {/* <Card.Text>{props.text}</Card.Text> */}

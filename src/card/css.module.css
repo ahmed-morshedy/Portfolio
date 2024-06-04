@@ -7,3 +7,9 @@
     width: 300px;
   }
 }
+
+@media (max-width: 340px) {
+  .card {
+    width: 250px;
+  }
+}
