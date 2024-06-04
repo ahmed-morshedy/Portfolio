@@ -6,7 +6,6 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faCodeFork,
   faHouse,
   faUser,
   faCode,

@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import Work from "./work/work.jsx";
 import Cards from "./card/Card.jsx";
 import NavBar from "./nav/nav";
+import Contact from "./contact/contact.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Home />
       <Work />
+      <Contact />
     </>
   );
 }

@@ -45,13 +45,9 @@ const Work = () => {
     >
       <div
         style={{
-          width: "fit-content",
-          padding: "5px 7px",
-          backgroundColor: " #e2e3e5",
-          borderRadius: "4px",
-          textAlign: "center",
           marginBlock: "30px",
         }}
+        className="title"
       >
         Projects
       </div>

@@ -34,8 +34,8 @@ function Home() {
             </span>{" "}
             with 1 year <br /> experience creating user friendly websites
           </p>
-          <a href="#contact" className={style.btn} data-content=" Book a date">
-            Book a date
+          <a href="#contact" className="Cbtn" data-content=" Book a call">
+            Book a call
           </a>
         </div>
         <div className={style.img}>
@@ -50,7 +50,7 @@ function Home() {
           <img src={avater} alt="avatar" className="rounded-pill " />
         </div>
         <div>
-          <p className={style.title}>About me</p>
+          <p className="title">About me</p>
           <h2 className="text-primary ">Transforming Visions into</h2>
           <h2 className="text-primary ">exceptional portfolios</h2>
           <p className={style.about}>
@@ -69,7 +69,7 @@ function Home() {
         className="d-flex flex-column align-items-center container justify-content-center py-5 "
         id="skills"
       >
-        <p className={style.title}>Skills and Tools</p>
+        <p className="title">Skills and Tools</p>
         <h2 className="text-primary ">I am really good at :</h2>
         <div className={style.logo}>
           <Container>
@@ -102,6 +102,7 @@ function Home() {
           </Container>
         </div>
       </div>
+      {/* Tools End*/}
     </>
   );
 }
