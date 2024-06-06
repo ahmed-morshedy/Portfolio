@@ -3,20 +3,45 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import Form from "react-bootstrap/Form";
+import emailjs from "emailjs-com";
+
 export default function Contact() {
   const [validated, setValidated] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
+    } else {
+      console.log(message);
+      sendEmail(form);
     }
 
     setValidated(true);
-    if (validated) {
-      console.log("true");
-    }
+  };
+
+  const sendEmail = (form) => {
+    // Replace with your EmailJS template ID and user ID
+    emailjs
+      .sendForm(
+        "service_hoo3ca8",
+        "template_yj9pz4t",
+        form,
+        "CowEBnjtfM0J6o5Du"
+      )
+      .then((result) => {
+        console.log("Email sent successfully:", result.text);
+        setEmail("");
+        setName("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
   };
   return (
     <div
@@ -52,11 +77,23 @@ export default function Contact() {
         onSubmit={handleSubmit}
       >
         <Form.Group className="mb-3">
-          <Form.Control type="text" placeholder="Full Name" required />
+          <Form.Control
+            type="text"
+            placeholder="Full Name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Control type="email" placeholder="Email" required />
+          <Form.Control
+            type="email"
+            placeholder="Email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </Form.Group>
 
         <InputGroup className="mb-3">
@@ -66,6 +103,8 @@ export default function Contact() {
             placeholder="Yor Massage"
             style={{ resize: "none", width: "290px", height: "100px" }}
             required
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
         </InputGroup>
 
