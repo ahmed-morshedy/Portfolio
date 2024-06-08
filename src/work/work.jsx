@@ -10,6 +10,7 @@ import restaurant from "../assets/restaurant.png";
 import elzero from "../assets/elzero.png";
 import toDo from "../assets/toDo.png";
 import date from "../assets/date.png";
+import guess from "../assets/guess.png";
 
 const Work = () => {
   const [repos, setRepos] = useState([]);
@@ -51,6 +52,7 @@ const Work = () => {
       >
         Projects
       </div>
+
       <Row className="g-4 " xs={1} md={3}>
         {/*Dashboard*/}
         <Col className="d-flex justify-content-center ">
@@ -117,6 +119,16 @@ const Work = () => {
             link={"https://to-do-reactproject.netlify.app/"}
             img={toDo}
             title={"To-Do List"}
+            text={"S  imple to do list with react "}
+          />
+        </Col>
+        {/*Guess*/}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["Js"]}
+            link={"https://ahmed-morshedy.github.io/Guess-Word/"}
+            img={guess}
+            title={"Guess word game"}
             text={"S  imple to do list with react "}
           />
         </Col>

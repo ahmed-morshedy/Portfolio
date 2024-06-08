@@ -37,7 +37,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="#home" className="d-flex">
-          <p className={style.name}>
+          <p className="name">
             &lt; M<span>orshedy</span> /&gt;
           </p>
         </Navbar.Brand>

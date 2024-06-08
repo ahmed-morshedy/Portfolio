@@ -13,15 +13,14 @@ function Cards(props) {
       </a>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        {/* <Card.Text>{props.text}</Card.Text> */}
+
         <div className="my-3">
-          Technology :{" "}
           {props.tech.map((data, id) => {
             return (
               <span
                 key={id}
                 id={id}
-                className="me-2 mb-1 border border-secondary-subtle p-1 rounded bg-secondary-subtle "
+                className="me-2 mb-1 border border-secondary-subtle p-1 rounded bg-secondary-subtle fs-6"
               >
                 {data}
               </span>
@@ -30,7 +29,7 @@ function Cards(props) {
         </div>
 
         <Button variant="outline-primary" href={props.link} target="_blank">
-          Demo :<FontAwesomeIcon icon={faLink} />
+          <FontAwesomeIcon icon={faLink} /> live preview
         </Button>
       </Card.Body>
     </Card>
