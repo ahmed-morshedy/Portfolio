@@ -248,3 +248,13 @@ h1 {
     font-weight: normal;
   }
 }
+
+@media (max-width: 420px) {
+  .contact {
+    flex-direction: column;
+    .text {
+      margin-block: 10px;
+      text-align: center;
+    }
+  }
+}

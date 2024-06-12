@@ -10,11 +10,11 @@ export default function Contact() {
       <p className="title">Contact</p>
 
       <div
-        className="contact d-flex align-items-center  mt-3 p-3 border rounded"
+        className="contact d-flex align-items-center  mt-3 p-3 border rounded "
         style={{ backgroundColor: "#f6f6f6" }}
       >
         <div className="fs-4">Start a project </div>
-        <div className="mx-4 fs-6">
+        <div className="mx-4 fs-6 text">
           interesred in working together? We should queue up a time to chat .
           I&apos;ll buy the tea
         </div>
