@@ -32,7 +32,7 @@ function Home() {
             <span className="text-primary fw-medium">
               &lt;Frontend Web Development /&gt;
             </span>{" "}
-            with 1 year <br /> experience creating user friendly websites
+            with 2 year <br /> experience creating user friendly websites
           </p>
           <a href="#contact" className="Cbtn" data-content=" Book a call">
             Book a call
