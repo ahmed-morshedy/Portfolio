@@ -11,6 +11,7 @@ import elzero from "../assets/elzero.png";
 import toDo from "../assets/toDo.png";
 import date from "../assets/date.png";
 import guess from "../assets/guess.png";
+import Menu from "../assets/Menu.png";
 
 const Work = () => {
   const [repos, setRepos] = useState([]);
@@ -130,6 +131,18 @@ const Work = () => {
             img={guess}
             title={"Guess word game"}
             text={"S  imple to do list with react "}
+          />
+        </Col>
+        {/*Restaurant Menu*/}
+        <Col className="d-flex justify-content-center ">
+          <Cards
+            tech={["React"]}
+            link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
+            img={Menu}
+            title={"Restaurant Menu"}
+            text={
+              "The Bondi template is known for its clean and modern aesthetic, typically featuring bold typography, minimalistic layouts, and vibrant colors. "
+            }
           />
         </Col>
         {/*Kasper*/}
