@@ -137,7 +137,7 @@ const Work = () => {
         <Col className="d-flex justify-content-center ">
           <Cards
             tech={["React"]}
-            link={"https://ahmed-morshedy.github.io/Kasper-Template/"}
+            link={"https://react-restauranta.netlify.app/"}
             img={Menu}
             title={"Restaurant Menu"}
             text={
